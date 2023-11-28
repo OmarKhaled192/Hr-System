@@ -8,6 +8,8 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { MainComponent } from './Components/main/main.component';
 import { LoginComponent } from './Components/login/login.component';
 import { RegisterComponent } from './Components/register/register.component';
+import { SettingsModule } from './modules/settings/settings.module';
+import { HomeComponent } from './Components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { RegisterComponent } from './Components/register/register.component';
     NavbarComponent,
     MainComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SettingsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
